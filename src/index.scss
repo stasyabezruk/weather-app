@@ -1,0 +1,90 @@
+@import './assets/settings.media.scss';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+
+.ant-layout.bg-black {
+  background: rgb(58, 58, 58);
+
+  .ant-switch,
+  .use-home-location button {
+    background: rgb(239, 239, 239);
+  }
+
+  .use-home-location button {
+    color: black;
+    border: 1px solid rgb(239, 239, 239);
+  }
+
+  .ant-switch-handle::before {
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+
+  .ant-btn-link {
+    color: white;
+  }
+}
+
+.fav-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  .ant-space {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.use-home-location {
+  margin-top: 10px;
+}
+
+@include mediaMaxXL {
+  div.weatherWidget {
+    width: 100%;
+  }
+}
+
+@include mediaMax(991) {
+  .daily-forecast {
+
+    .ant-row {
+      justify-content: flex-start;
+
+      img {
+        width: 50px;
+        height: 50px;
+        margin-top: -10px;
+      }
+
+      .ant-space-item span:first-child {
+        margin-right: 40px;
+      }
+    }
+  }
+}
+
+@include mediaMax(480) {
+  .carousel-pagination {
+    display: none !important;
+  }
+}

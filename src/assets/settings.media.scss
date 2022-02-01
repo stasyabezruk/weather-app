@@ -1,0 +1,110 @@
+$xxs: 414px;
+$xs: 575px;
+$sm: 576px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1200px;
+$xxl: 1600px;
+
+$size320: 320px;
+$size768: 768px;
+$size1024: 1024px;
+$size1920: 1920px;
+
+@mixin mediaMax($size) {
+    @media screen and (max-width: ($size + 0px)) {
+        @content;
+    }
+}
+
+@mixin mediaMin($size) {
+    @media screen and (min-width: ($size + 0px)) {
+        @content;
+    }
+}
+
+//max-width
+@mixin mediaMaxXXS() {
+    @include mediaMax($xxs) {
+        @content;
+    }
+}
+
+@mixin mediaMaxXS() {
+    @include mediaMax($xs) {
+        @content;
+    }
+}
+
+@mixin mediaMaxSM() {
+    @include mediaMax($sm) {
+        @content;
+    }
+}
+
+@mixin mediaMaxMD() {
+    @include mediaMax($md) {
+        @content;
+    }
+}
+
+@mixin mediaMaxLG() {
+    @include mediaMax($lg) {
+        @content;
+    }
+}
+
+@mixin mediaMaxXL() {
+    @include mediaMax($xl) {
+        @content;
+    }
+}
+
+@mixin mediaMaxXXL() {
+    @include mediaMax($xxl) {
+        @content;
+    }
+}
+
+//min-width
+@mixin mediaMinXXS() {
+    @include mediaMin($xxs + 1) {
+        @content;
+    }
+}
+
+@mixin mediaMinXS() {
+    @include mediaMin($xs + 1) {
+        @content;
+    }
+}
+
+@mixin mediaMinSM() {
+    @include mediaMin($sm + 1) {
+        @content;
+    }
+}
+
+@mixin mediaMinMD() {
+    @include mediaMin($md + 1) {
+        @content;
+    }
+}
+
+@mixin mediaMinLG() {
+    @include mediaMin($lg + 1) {
+        @content;
+    }
+}
+
+@mixin mediaMinXL() {
+    @include mediaMin($xl + 1) {
+        @content;
+    }
+}
+
+@mixin mediaMinXXL() {
+    @include mediaMin($xxl + 1) {
+        @content;
+    }
+}

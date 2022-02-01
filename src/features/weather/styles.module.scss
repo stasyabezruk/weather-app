@@ -1,0 +1,18 @@
+@import '@assets/settings.media.scss';
+
+.searchRow {
+    max-width: 64rem;
+    width: 66.666667%;
+}
+
+.weatherWidgetWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+@include mediaMax(660) {
+    .searchRow {
+        width: 100%;
+        margin-top: 20px;
+    }
+}

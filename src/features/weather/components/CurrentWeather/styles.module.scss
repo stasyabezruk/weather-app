@@ -1,0 +1,21 @@
+.currentWeatherItem {
+    margin-bottom: 20px;
+    font-size: 16px;
+
+    label {
+        margin-right: 10px;
+    }
+
+    span {
+        font-weight: bold;
+    }
+}
+
+.weatherDescription {
+    font-size: 16px;
+}
+
+.temp {
+    font-weight: bold;
+    font-size: 20px;
+}

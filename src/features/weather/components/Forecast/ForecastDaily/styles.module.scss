@@ -1,0 +1,26 @@
+@import '@assets/settings.media.scss';
+
+.list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.wrapper {
+    margin-top: 30px;
+    width: 100%;
+
+    h3 {
+        font-weight: bold;
+    }
+}
+
+@include mediaMax(991) {
+    .list {
+        flex-direction: column;
+
+        .ant-row {
+            justify-content: flex-start;
+        }
+    }
+}
